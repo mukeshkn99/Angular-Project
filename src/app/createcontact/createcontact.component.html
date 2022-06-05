@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">
+<h2>CreateContact</h2>
+<form (ngSubmit)="savecontact()">
+<div claas="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" name="name" [(ngModel)]="contact.name">
+</div>
+
+<div claas="form-group">
+    <label>Email</label>
+    <input type="text" class="form-control" name="email" [(ngModel)]="contact.email">
+</div>
+
+<div claas="form-group">
+    <label>ContactNo</label>
+    <input type="text" class="form-control" name="phoneno" [(ngModel)]="contact.phoneno">
+</div>
+<br/>
+<div>
+    <button type="submit" class="btn btn-info"(click)="savecontact()">Submit</button>
+</div>
+</form>
+</div>
